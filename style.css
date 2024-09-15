@@ -1,0 +1,99 @@
+:root{
+    --primary-color: #F2542D; 
+    --dark-primary: #562C2C;
+    --second-color: #127475;
+    --light-second: #127475;
+    --ligthest-color: #F5DFBB;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--ligthest-color);
+}
+
+#search-container{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+header > h2 > i {
+    margin-right: 0.5rem;
+}
+
+.name-movie-wrapper{
+    width: 65%;
+    display: flex;
+    align-items: center;
+}
+
+.year-movie-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+#search-btn{
+    width: 5%;
+    all: unset;
+    cursor: pointer;
+    padding: 0.2rem;
+    border: 2px solid var(--dark-primary);
+    border-radius: 10px;
+}
+
+.name-movie-wrapper > input {
+    width: 100%;
+}
+
+.year-movie-wrapper > input {
+    max-width: 5rem;
+}
+
+.name-movie-wrapper > input,
+.year-movie-wrapper > input {
+   margin: 0.5rem; 
+   border-radius: 8px;
+   padding: 0.3rem 0.2rem;
+   font-weight: bold;
+}
+
+.name-movie-wrapper > label,
+.year-movie-wrapper > label {
+    font-weight: bold;
+}
+
+#search-btn:focus,
+#search-btn:hover{
+    background-color: var(--dark-primary);
+}
+
+main {
+text-align: center;
+padding: 2rem 0;
+background-color: var(--ligthest-color);
+flex-grow: 1;
+color: var(--primary-color);
+}
